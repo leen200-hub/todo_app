@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("Title")),
         body: Text(
-          "leen majali",
+          "my first update on github",
           style: TextStyle(
             color: Colors.red,
             fontSize: 40.6,
