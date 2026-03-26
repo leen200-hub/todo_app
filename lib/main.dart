@@ -11,38 +11,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("Title")),
         body: Container(
-          decoration: BoxDecoration(
-            color: Colors.red,
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-            border: Border.all(color: Colors.amberAccent, width: 10),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.blueAccent,
-                offset: Offset(10, 10),
-                spreadRadius: 2,
-                blurRadius: 10,
+          width: 500,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("leen majali"),
+              Container(width: 100, height: 100, color: Colors.pinkAccent),
+              Image.network(
+                'https://pixabay.com/images/download/x-9792421_1920.jpg',
               ),
-              BoxShadow(
-                color: Color.fromARGB(255, 77, 211, 36),
-                offset: Offset(-10, 10),
-                spreadRadius: 2,
-                blurRadius: 10,
-              ),
+              Container(width: 100, height: 100, color: Colors.purpleAccent),
+              Text("leen majali"),
             ],
-          ),
-          width: 300,
-          height: 300,
-          alignment: Alignment.center,
-          margin: EdgeInsets.all(10),
-          padding: EdgeInsets.all(20),
-          child: const Text(
-            "my seconde update on github",
-            style: TextStyle(
-              fontSize: 40.6,
-              color: Colors.blueAccent,
-              fontWeight: FontWeight.w100,
-              backgroundColor: Colors.black87,
-            ),
           ),
         ),
       ),
